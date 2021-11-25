@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Open+Sans:ital,wght@0,400;1,300&family=Outfit:wght@300;400;500&family=Quicksand&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden !important;
+}
+
+i{
+    display: inline;
+}
+.nav-item, .dropdown-item{
+    // font-size: 29px;
+    font-family: 'Open Sans', sans-serif;
+    height: 50px !important;
+    transition: 0.5s !important;
+    a{
+        color: white !important;
+    }
+
+}
+
+
+.nav-item{
+    margin-right: 5px;
+}
+
+.dropdown-menu{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+
+.header{
+    color: white;
+    background-image: url('../image/bg.png') !important; 
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    width: 100%;
+    min-height: 900px;
+    padding-bottom: 350px;
+    // width: 100% !important;
+    h1{
+        margin-top: 60%;
+        letter-spacing: 5px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+    img{
+        width: 700px;
+        margin-top: 10%;
+        margin-left: -85px;
+    }
+}
+
+h1{
+    font-size:72px;
+    // line-height:60px;
+}
+
+
+.smallscreen{
+    display: none;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+.hero{
+    
+	transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
+}
+
+
+
+.sosmed-mobile{
+    visibility: hidden;
+    position: absolute;
+}
+
+@media only screen and(max-width:1000px){
+    html, body{
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+    .header{
+        margin-top: unset !important;
+        img{
+            width: 100%;
+            // margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            // margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0 !important;
+            line-height: 50px;
+        }
+        p{
+            line-height: 25px;
+        }
+        
+    }
+   
+
+    h1{
+        font-size:50px;
+        line-height:30px;
+        text-align: center;
+    }
+    
+    p{
+        font-size: 25px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .ketua{
+        .jabatan, .nama{
+            color: white !important;
+        }
+    }
+    .anggota{
+        height: 300px !important;
+        .jabatan{
+            margin-top: 20px;
+            font-size: 20px !important;
+            font-weight: 500;
+            margin-bottom: 10px !important;
+        }
+        .nama{
+            font-size: 20px !important;
+            font-weight: 400;
+        }
+        img{
+            width:  150px !important;
+            height: 170px !important;
+        }
+    }
+    .sosmed-large{
+        display: none;
+    }
+
+    .sosmed-mobile{
+        visibility: visible !important;
+        position: unset !important;
+    }
+
+    .judul-pengurus{
+        margin-top: 20%;
+        font-size: 30px !important;
+        font-weight: 400;
+        p{
+            font-size: 20px !important;
+        }
+    }
+
+    .kadept{
+        margin-top: -20px !important;
+    }
+
+    .judul-bagian{
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        font-size: 30px !important;
+        font-weight: 400;
+        p{
+            font-size: 20px !important;
+        }
+    }
+}
+
+@media only screen and(max-width:500px){
+    html, body{
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    .header{
+        margin-top: unset !important;
+        img{
+            width: 100%;
+            // margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            // margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0 !important;
+            line-height: 50px;
+        }
+        p{
+            line-height: 25px;
+        }
+        
+    }
+   
+
+    h1{
+        font-size:50px;
+        line-height:30px;
+        text-align: center;
+    }
+    
+    p{
+        font-size: 25px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .anggota{
+        height: 250px !important;
+        .jabatan{
+            margin-top: 20px;
+            font-size: 15px !important;
+            font-weight: 500;
+            margin-bottom: 10px !important;
+        }
+        .nama{
+            font-size: 15px !important;
+            font-weight: 400;
+        }
+        img{
+            width:  120px !important;
+            height: 140px !important;
+        }
+    }
+
+    .sosmed-large{
+        display: none;
+    }
+
+    .sosmed-mobile{
+        visibility: visible !important;
+        position: unset !important;
+    }
+
+    .judul-pengurus{
+        margin-top: 20%;
+        font-size: 30px !important;
+        font-weight: 400;
+        p{
+            font-size: 20px !important;
+        }
+    }
+
+    .kadept{
+        margin-top: -20px !important;
+    }
+
+    .judul-bagian{
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        font-size: 25px !important;
+        font-weight: 400;
+        p{
+            font-size: 20px !important;
+        }
+    }
+}
+
+@media only screen and(max-width:360px){
+
+    html, body{
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+    .header{
+        margin-top: unset !important;
+        img{
+            width: 100%;
+            // margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            // margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0 !important;
+            line-height: 50px;
+        }
+        p{
+            line-height: 25px;
+        }
+        
+    }
+   
+
+    h1{
+        font-size:50px;
+        line-height:30px;
+        text-align: center;
+    }
+    
+    p{
+        font-size: 25px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .ketua{
+        .jabatan, .nama{
+            color: white !important;
+        }
+    }
+    
+    .anggota{
+        height: 250px !important;
+        .jabatan{
+            margin-top: 20px;
+            font-size: 15px !important;
+            font-weight: 500;
+            margin-bottom: 10px !important;
+        }
+        .nama{
+            font-size: 15px !important;
+            font-weight: 400;
+        }
+        img{
+            width:  100px !important;
+            height: 120px !important;
+        }
+    }
+    .sosmed-large{
+        display: none;
+    }
+
+    .sosmed-mobile{
+        visibility: visible !important;
+        position: unset !important;
+    }
+
+    .judul-pengurus{
+        margin-top: 20%;
+        font-size: 30px !important;
+        font-weight: 400;
+        p{
+            font-size: 20px !important;
+        }
+    }
+
+    .kadept{
+        margin-top: -20px !important;
+    }
+
+    .judul-bagian{
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+        font-size: 25px !important;
+        font-weight: 400;
+        p{
+            font-size: 20px !important;
+        }
+    }
+}
+
+@media only screen and(max-width:990px){
+    .smallscreen{
+        display: block;
+    }
+    .bigscreen{
+        display: none;
+    }
+}
+
+@media only screen and(max-width:1500px){
+    .header{
+        margin-top: -100px;
+    }
+}
+
+.hover-nav-item{
+    transition: 0.5s;
+    &:hover{
+        border-bottom: 5px solid;
+    }
+}
+
+.bg-light{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(107, 107, 107, 0) 100%) !important;
+    transition: 0.5s ease;
+}
+.bg-light.scrolled{
+    background: linear-gradient(179.96deg, rgba(0, 147, 233, 0.79) 0.04%, rgba(24, 94, 135, 0.95) 41.06%, #104972 94.37%) !important;
+}
+
+.sosmed{
+    color: white;
+    font-weight: 100 !important;
+    text-decoration: none;
+    justify-content: center;
+    .sosmed-item{
+        display: inline;
+        justify-content: center;
+    }
+}
+
+.bg-judul{
+    background: url("../image/bg-judul.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+}
+
+.bg-judul-2{
+    background: url("../image/bg-judul-long.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 180px;
+}
+
+.judul{
+    padding-top: 55px;
+    font-weight: 500;
+    color: white;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+// .footer{
+//     background: url('../image/bg-footer.png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     padding-bottom: 50px;
+//     padding-top: 300px;
+//     color: white;
+//     h2{
+//         font-size: 30px;
+//         font-weight: 400;
+//     }
+
+//     h4{
+//         font-weight: 300;
+//         font-size: 20px;
+
+//     }
+//     i{
+//         font-size: 40px;
+//     }
+//     td{
+//         height: 50px;
+//         i{
+//             vertical-align: bottom;
+//         }
+//         h4{
+//         }
+//     }
+// }
+
+.footer{
+    background: url('../image/bg-footer.png');
+    background-size: cover;
+    // position: absolute;
+    // margin-top: -s500px;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    padding-top: 300px;
+    color: white;
+
+    h4{
+        font-weight: 300;
+    }
+    
+    img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.footer2{
+    background: url('../image/bg-footer.png');
+    background-size: cover;
+    // position: absolute;
+    margin-top: -500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    padding-top: 300px;
+    color: white;
+
+    h4{
+        font-weight: 300;
+    }
+    
+    img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.judul-pengurus{
+    margin-top: 20%;
+    font-size: 48px;
+    font-weight: 400;
+    p{
+        font-size: 36px;
+    }
+}
+
+.judul-bagian{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 48px;
+    font-weight: 400;
+    p{
+        font-size: 36px;
+    }
+}
+
+.white{
+    color: white;
+}
+
+.anggota{
+    height: 500px;
+    .jabatan{
+        margin-top: 20px;
+        margin-bottom: -8px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .nama{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    img{
+        height: 350px;
+    }
+}
+
+.body-struktur{
+    background: url("../image/bg-strk.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top: 400px !important;
+    padding-bottom: 200px;
+    .ketua{
+        margin-top: -300px;
+    }
+}
+
+.kadept{
+    margin-top: -100px;
+}
+
+.spacer{
+    margin-top: 200px;
+}
+
+.text-start{
+    font-weight: 300 !important;
+    font-size: 24 !important;
+    line-height: 30px;
+}
