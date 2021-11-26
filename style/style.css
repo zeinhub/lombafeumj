@@ -110,6 +110,12 @@ h1 {
   position: absolute;
 }
 
+@media only screen and (max-width: 1600px) {
+  .ketua .jabatan, .ketua .nama {
+    color: white !important;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   html, body {
     width: 100%;
@@ -435,7 +441,7 @@ h1 {
   background: url("../image/bg-footer.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
   padding-top: 300px;
   color: white;
 }
@@ -449,13 +455,18 @@ h1 {
   margin-right: auto;
 }
 
+.footer a {
+  display: block !important;
+}
+
 .footer2 {
   background: url("../image/bg-footer.png");
   background-size: cover;
   margin-top: -500px;
+  height: 100% !important;
   width: 100%;
   background-repeat: no-repeat;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
   padding-top: 300px;
   color: white;
 }
@@ -477,6 +488,17 @@ h1 {
 
 .judul-pengurus p {
   font-size: 36px;
+}
+
+.sosmed-large .row {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.sosmed-large a {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .judul-bagian {
@@ -516,6 +538,7 @@ h1 {
 
 .body-struktur {
   background: url("../image/bg-strk.png");
+  width: 100% !important;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 400px !important;
